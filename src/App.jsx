@@ -2,6 +2,7 @@ import { Fragment } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { DefaultLayout } from "./layouts";
 import { publicRoutes } from "./routers";
+import i18next from "./language/i18next"
 
 function App() {
   return (

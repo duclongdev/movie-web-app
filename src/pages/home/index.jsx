@@ -1,14 +1,13 @@
-import React from 'react'
-import './index.css'
-const Home = () => {
-  return (
-    <div className='bg-orange-600' >
-      <h2 >Home </h2>
-      <div >
+import React from "react";
+import { useTranslation } from "react-i18next";
 
-      </div>
+const Home = () => {
+  const { t } = useTranslation();
+  return (
+    <div className="bg-orange-600">
+      <h2>{t("Home")} </h2>
     </div>
   );
-}
+};
 
-export default Home
+export default Home;
