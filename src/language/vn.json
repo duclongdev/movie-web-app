@@ -1,5 +1,10 @@
 {
   "translation": {
-    "Home": "Trang chủ"
+    "Home": "Trang chủ",
+    "Language": "Ngôn ngữ",
+    "History": "Lịch sử",
+    "User": "Người dùng",
+    "Me": "Tôi",
+    "Search": "Tìm kiếm"
   }
 }

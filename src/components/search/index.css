@@ -1,0 +1,5 @@
+@layer components {
+  .search-container {
+    @apply w-96 rounded-3xl border focus-within:border-green-500 flex items-center justify-between bg-gray-100;
+  }
+}

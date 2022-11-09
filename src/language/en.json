@@ -1,5 +1,10 @@
 {
     "translation":{
-        "Home": "Home"
+        "Home": "Home",
+        "Language": "Language",
+        "History": "History",
+        "User": "User",
+        "Me": "Me",
+        "Search":"Search"
     }
 }
