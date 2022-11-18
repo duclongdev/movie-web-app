@@ -7,7 +7,7 @@ const Bookmark = () => {
       fill="none"
       viewBox="0 0 24 24"
       strokeWidth="2"
-      stroke="black"
+      stroke="white"
       className="w-6 h-6"
     >
       <path

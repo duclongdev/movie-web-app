@@ -9,3 +9,7 @@ export { default as SearchIcon } from "./icon/Search";
 export { default as PreIcon } from "./icon/Previous";
 export { default as NextIcon } from "./icon/Next";
 export {default as UserIcon2} from "./icon/User2"
+export { default as VolumeIcon } from "./icon/volume";
+export { default as StarIcon } from "./icon/star";
+export { default as ShareArrow } from "./icon/sharearrow";
+export { default as Download } from "./icon/down";

@@ -1,0 +1,83 @@
+.relative{
+    background: linear-gradient(90deg,#010e18 40%, #ffffff00);
+}
+.VideoIntro{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 400px;
+    z-index: -1;    
+}
+.headingIntro{
+    margin-top: -220px;
+    margin-left: 50px;
+    font-weight: bold;
+}
+.lable-top{
+    margin-left: 50px;
+    margin-top: 24px;
+    font-size: 12px;
+}
+.broken-line{
+    width: 2px;
+    height: 10px;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: rgb(230, 230, 230);
+    margin: 0px 8px;
+    display: inline-block;
+}
+.infoTag{
+    margin-left: 50px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.info-tag-type{
+    margin-left: 50px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.btnPlay{
+    display: flex;
+    background-color: rgb(74 222 128);
+    font-weight: bold;
+    border-radius: 4px;
+    margin: 10px 46px;
+    width: 90px;
+    height: 35px;
+    line-height: 35px;
+}
+.btnAdd{
+    display: flex;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-left: -34px;
+    width: 160px;
+    height: 35px;
+    line-height: 35px;
+    background-color: rgb(70, 70, 70);
+}
+.btnShare{
+    display: flex;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-left: 12px;
+    width: 94px;
+    height: 35px;
+    line-height: 35px;
+    background-color: rgb(70, 70, 70);
+}
+.btnDown{
+    display: flex;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-left: 12px;
+    width: 130px;
+    height: 35px;
+    line-height: 35px;
+    background-color: rgb(70, 70, 70);
+}
