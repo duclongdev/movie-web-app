@@ -44,6 +44,7 @@ const Home = () => {
         })}
       </Slider>
       <div className="bg-red w-20 h-20 absolute z-50 top-0"></div>
+      <img src="../../../public/assets" alt="" />
       <ListMovie />
       <div className="w-12 h-64"></div>
     </div>
