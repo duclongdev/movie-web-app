@@ -12,8 +12,9 @@ function Intro() {
           height="500px"
           volume={1}
           muted={false}
-          url="../../assets/onepiece/OnePiece.mp4"
+          url="https://www.youtube.com/watch?v=AeaD3Q-bFjU&list=PLKvoOwlacRoKCfIs4xlZt1Odu4SC2OIhW"
           className='VideoIntro'
+          
         />
       </div>
       <div className='InforIntro'>
