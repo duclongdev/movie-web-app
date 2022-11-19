@@ -1,5 +1,0 @@
-@layer components {
-  .header-container {
-    @apply flex flex-row place-content-between px-14 py-2 w-full fixed z-20;
-  }
-}

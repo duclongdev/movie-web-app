@@ -1,11 +1,14 @@
-import React from "react";
-
+import React from 'react'
+import Mota from "./mota/intro"
+import MovieRow from "./MovieRow/movierow"
 const Detail = () => {
   return (
-    <div>
-      <h1 class="bg-red-600">phần detail</h1>
+    <div id="page">
+      <Mota />
+      <MovieRow/>
+
     </div>
-  );
-};
+  )
+}
 
 export default Detail;
