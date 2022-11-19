@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { HeaderBtn } from "../button";
+import { HeaderBtn, UserBtn } from "../button";
 import { LogoBtn } from "../button";
 import { SwitchModeBtn } from "../button";
 import ChangeLangBtn from "../button/ChangeLangBtn";
@@ -28,9 +28,9 @@ const Header = () => {
       <Search />
       <div>
         <div className="flex flex-row">
-          <ChangeLangBtn />
+          <UserBtn  />
           <HeaderBtn name={t("History")} type="History" />
-          <HeaderBtn name={t("Me")} type="Me" />
+          <ChangeLangBtn />
         </div>
       </div>
     </div>

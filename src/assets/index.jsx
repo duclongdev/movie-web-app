@@ -8,3 +8,4 @@ export { default as BookmarkIcon } from "./icon/Bookmark";
 export { default as SearchIcon } from "./icon/Search";
 export { default as PreIcon } from "./icon/Previous";
 export { default as NextIcon } from "./icon/Next";
+export {default as UserIcon2} from "./icon/User2"
