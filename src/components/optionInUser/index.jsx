@@ -1,25 +1,44 @@
-import React from 'react'
-import { UserIcon2 } from '../../assets';
+import React from "react";
+import {
+  BookmarkIcon,
+  CalenderIcon,
+  LogoutIcon,
+  UserIcon2,
+} from "../../assets";
 
 const Option = () => {
   return (
-    <div className="w-64 bg-red-500 rounded-md">
-      <div className="bg-blue-500 rounded-t-md p-4">
+    <div className="w-64 bg-slate-800 rounded-md">
+      <div className="bg-green-500 rounded-t-md p-4 flex ">
         <img
           src="https://cdn-amz.woka.io/images/I/9119ST+olGL.jpg"
           alt=""
-          className="rounded-full w-"
+          className="rounded-full w-12 h-12"
         />
-        <span>aaa</span>
+        <span className="ml-2 mt-2 text-xl">User123456</span>
       </div>
-      <button className="flex flex-row mb-2">
-        <UserIcon2 />
-        <span className="ml-4">Tài khoản</span>
-      </button>
-      <div>Đăng xuất</div>
-      <div>Hồ sơ</div>
+      <div className="p-4">
+        <button className="flex flex-row mb-4 text-white hover:text-green-500 ">
+          <UserIcon2 />
+          <span className="ml-4 text-white hover:text-green-500">
+            Tài khoản
+          </span>
+        </button>
+        <button className="flex flex-row mb-4 text-white hover:text-green-500">
+          <CalenderIcon  />
+          <span className="ml-4 text-white hover:text-green-500">Phim đặt trước</span>
+        </button>
+        <button className="flex flex-row mb-4 text-white hover:text-green-500">
+          <BookmarkIcon color={"white"} />
+          <span className="ml-4 text-white hover:text-green-500">Xem sau</span>
+        </button>
+        <button className="flex flex-row text-white hover:text-green-500 ">
+          <LogoutIcon /> 
+          <span className="ml-4 text-white hover:text-green-500">Đăng xuất</span>
+        </button>
+      </div>
     </div>
   );
-}
+};
 
-export default Option
+export default Option;

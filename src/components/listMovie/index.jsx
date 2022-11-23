@@ -11,7 +11,7 @@ import data from "../../assets/data/listMovie.js";
 
 const ListMovie = () => {
   return (
-    <div >
+    <div>
       {data.map((e, index) => (
         <div
           key={index}

@@ -27,6 +27,7 @@ function Intro() {
           height="560px"
           volume={1}
           muted={false}
+          auto
           url="https://www.youtube.com/watch?v=8mPrn6ztuls"
           className="VideoIntro"
         />
