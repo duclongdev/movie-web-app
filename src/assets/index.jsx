@@ -14,4 +14,7 @@ export { default as StarIcon } from "./icon/star";
 export { default as ShareArrow } from "./icon/sharearrow";
 export { default as Download } from "./icon/down";
 export { default as ArrowBottom } from "./icon/ArrowBottom";
+export { default as Phone } from "./icon/Phone";
+export { default as TV } from "./icon/TV";
+export { default as Computer } from "./icon/computer";
 
