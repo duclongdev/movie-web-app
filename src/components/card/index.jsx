@@ -1,8 +1,10 @@
 import React from "react";
 import { BookmarkIcon, PlayIcon } from "../../assets";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Card = ({ data }) => {
+  let navigate = useNavigate();
   const [image, setImage] = useState(data.image);
   const change = () => {
     setImage(data.imageBackup);
@@ -10,11 +12,16 @@ const Card = ({ data }) => {
   const change2 = () => {
     setImage(data.image);
   };
+  const routeChange = () => {
+    let path = `detail`;
+    navigate(path);
+  };
   return (
     <button
       className="w-[12rem] h-[20rem] rounded-md hover:scale-110 ease-in duration-200 py-6 group text-left "
       onMouseOut={change}
       onMouseOver={change2}
+      onClick={routeChange}
     >
       <div className="relative">
         <img

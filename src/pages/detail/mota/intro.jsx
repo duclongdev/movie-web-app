@@ -2,8 +2,6 @@ import React from "react";
 import "./intro.css";
 import ReactPlayer from "react-player";
 import {
-  StarIcon,
-  VolumeIcon,
   PlayIcon,
   BookmarkIcon,
   ShareArrow,
@@ -11,13 +9,19 @@ import {
   ArrowBottom,
 } from "../../../assets";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 const des = `Đảo Hải Tặc - One Piece là chuyện về cậu bé Monkey D. Luffy do ăn nhầm Trái Ác Quỷ, bị biến thành người cao su và sẽ không bao giờ biết bơi. 10 năm sau sự việc đó, cậu rời quê mình và kiếm đủ 10thành viên để thành một băng hải tặc, biệt hiệu Hải tặc Mũ Rơm. Khiđó của phiêu lưu tìm kiếm kho báu One Piece bắt đầu. Trong cuộcphiêu lưu tìm kiếm One Piece, băng Hải tặc mũ rơm phải chiến đấu với nhiều băng hải tặc xấu khác cũng muốn độc chiếm One Piece và Hảiquân của Chính phủ muốn diệt trừ hải tặc. Băng Hải tặc Mũ Rơm phải trải qua biết bao nhiêu khó khăn, không lùi bước với ước mơ "Trở thành Vua Hải Tặc và chiếm được kho báu One Piece".`;
 function Intro() {
+  let navigate = useNavigate();
+  const routeChange = () => {
+    console.log("debug");
+    navigate("/play", { replace: true });
+  };
   const [seeMore, setSeeMore] = useState(false);
-  const handlerSeeMore =()=>{
-    console.log(seeMore)
-    seeMore === false ? setSeeMore(true) : setSeeMore(false)
-  }
+  const handlerSeeMore = () => {
+    console.log(seeMore);
+    seeMore === false ? setSeeMore(true) : setSeeMore(false);
+  };
   return (
     <div className="relative text-white pt-80 ">
       <div>
@@ -62,14 +66,17 @@ function Intro() {
         <div className="ml-12 mt-2 max-w-xl">
           <span className="text-gray-400">Mô tả: </span>
           <div>
-            <span>{seeMore === true ? des : des.slice(0,305) + "..."}</span>
-            <button className="text-green-500 flex" onClick={() => handlerSeeMore()}>
+            <span>{seeMore === true ? des : des.slice(0, 305) + "..."}</span>
+            <button
+              className="text-green-500 flex"
+              onClick={() => handlerSeeMore()}
+            >
               Xem thêm <ArrowBottom />
             </button>
           </div>
         </div>
         <div className="flex mt-3">
-          <button className="btnPlay">
+          <button className="btnPlay" onClick={routeChange}>
             <span className="mx-2 mt-1.5">
               <PlayIcon />
             </span>
