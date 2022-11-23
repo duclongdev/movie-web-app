@@ -1,0 +1,11 @@
+video{
+    width: 120%;
+    height: 180%;
+    border-radius: 5px;
+}
+
+.transition-style {
+    transition-property: width;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
