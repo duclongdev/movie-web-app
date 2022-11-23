@@ -31,8 +31,7 @@ function Intro() {
           height="560px"
           volume={1}
           muted={false}
-          auto
-          url="https://www.youtube.com/watch?v=8mPrn6ztuls"
+          url="https://www.youtube.com/watch?v=AeaD3Q-bFjU&list=PLKvoOwlacRoKCfIs4xlZt1Odu4SC2OIhW"
           className="VideoIntro"
         />
       </div>
