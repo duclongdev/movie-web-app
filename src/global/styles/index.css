@@ -1,6 +1,6 @@
 @tailwind base;
 @layer base {
-  body{
-    @apply dark:bg-slate-800 bg-white
+  body {
+    @apply dark:bg-slate-800 bg-white;
   }
 }

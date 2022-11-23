@@ -14,7 +14,6 @@ const des = `Đảo Hải Tặc - One Piece là chuyện về cậu bé Monkey D
 function Intro() {
   let navigate = useNavigate();
   const routeChange = () => {
-    console.log("debug");
     navigate("/play", { replace: true });
   };
   const [seeMore, setSeeMore] = useState(false);

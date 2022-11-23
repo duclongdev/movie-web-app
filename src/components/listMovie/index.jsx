@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "../card";
-import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css";
@@ -15,7 +15,7 @@ const ListMovie = () => {
       {data.map((e, index) => (
         <div
           key={index}
-          className="flex mx-14 justify-around relative top-[-5rem] mb-20"
+          className="flex mx-14 justify-around relative top-[-5rem] mb-16 bg-none "
         >
           <h1 className="absolute left-0 text-white top-[-2rem]   ">
             {e.title}
