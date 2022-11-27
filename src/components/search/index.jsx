@@ -9,7 +9,7 @@ import "tippy.js/animations/scale.css";
 const Search = () => {
   const [message, setMessage] = useState("");
   const { t } = useTranslation();
-  const [searchResult, setSearchResult] = useState([1,2,3]);
+  const [searchResult, setSearchResult] = useState([1, 2, 3]);
   return (
     <Tippy
       interactive
