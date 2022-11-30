@@ -38,8 +38,9 @@ const Play = () => {
         <div className="bg-gray-200 w-[104%] pl-4 dark:bg-slate-700 rounded-r-md">
           <a
             href=""
-            className="no-underline my-4 font-bold uppercase text-xl hover:text-green-500 block dark:text-white">
-            BORUTO-NARUTO NEXT GENERATIONS
+            className="no-underline my-4 font-bold uppercase text-xl hover:text-green-500 block dark:text-white"
+          >
+            ONE PIECE
           </a>
 
           <h2 className="items-center text-center dark:text-white">
@@ -52,8 +53,8 @@ const Play = () => {
         </div>
 
         <div className="information col-span-3 dark:text-white">
-          <TitleBar filmName="BORUTO-NARUTO NEXT GENERATIONS" episodes={episode + " 1"}/>
-          
+          <TitleBar filmName="ONE PIECE" episodes={episode + " 1"} />
+
           <div className="flex font-medium text-l mt-[12px]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -68,7 +69,7 @@ const Play = () => {
               />
             </svg>
             <p className="font-bold text-[#00dc5a] mr-1">9.5</p>
-            
+
             <span className="mr-1">(71.7k Lượt đánh giá)</span>
             <span className="mr-1 text-gray-500">•</span>
             <span className="text-green-500">Đánh giá</span>
@@ -88,27 +89,49 @@ const Play = () => {
             </div>
 
             <div className="read-more-read-less w-[38%] mt-[14px]">
-                <button className='font-semibold flex items-center hover:text-[#00dc5a]' onClick={() => setShowMore(!showMore)} >
-                    <span>
-                        {showMore ? 'Thu nhỏ' : 'Thêm'}
-                    </span>
-                    <svg transform={showMore ? 'scale(1,-1)' : undefined} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-5 h-5">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                    </svg>
-                </button>
+              <button
+                className="font-semibold flex items-center hover:text-[#00dc5a]"
+                onClick={() => setShowMore(!showMore)}
+              >
+                <span>{showMore ? "Thu nhỏ" : "Thêm"}</span>
+                <svg
+                  transform={showMore ? "scale(1,-1)" : undefined}
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className="w-5 h-5"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+              </button>
             </div>
           </div>
 
           <ShowMore showMore={showMore}>
-          Đảo Hải Tặc - One Piece là chuyện về cậu bé Monkey D. Luffy do ăn nhầm Trái Ác Quỷ, bị biến thành người cao su và sẽ không bao giờ biết bơi. 10 năm sau sự việc đó, cậu rời quê mình và kiếm đủ 10 thành viên để thành một băng hải tặc, biệt hiệu Hải tặc Mũ Rơm. Khi đó của phiêu lưu tìm kiếm kho báu One Piece bắt đầu. Trong cuộc phiêu lưu tìm kiếm One Piece, băng Hải tặc mũ rơm phải chiến đấu với nhiều băng hải tặc xấu khác cũng muốn độc chiếm One Piece và Hải quân của Chính phủ muốn diệt trừ hải tặc. Băng Hải tặc Mũ Rơm phải trải qua biết bao nhiêu khó khăn, không lùi bước với ước mơ "Trở thành Vua Hải Tặc và chiếm được kho báu One Piece".
+            Đảo Hải Tặc - One Piece là chuyện về cậu bé Monkey D. Luffy do ăn
+            nhầm Trái Ác Quỷ, bị biến thành người cao su và sẽ không bao giờ
+            biết bơi. 10 năm sau sự việc đó, cậu rời quê mình và kiếm đủ 10
+            thành viên để thành một băng hải tặc, biệt hiệu Hải tặc Mũ Rơm. Khi
+            đó của phiêu lưu tìm kiếm kho báu One Piece bắt đầu. Trong cuộc
+            phiêu lưu tìm kiếm One Piece, băng Hải tặc mũ rơm phải chiến đấu với
+            nhiều băng hải tặc xấu khác cũng muốn độc chiếm One Piece và Hải
+            quân của Chính phủ muốn diệt trừ hải tặc. Băng Hải tặc Mũ Rơm phải
+            trải qua biết bao nhiêu khó khăn, không lùi bước với ước mơ "Trở
+            thành Vua Hải Tặc và chiếm được kho báu One Piece".
           </ShowMore>
           <hr className="mt-[16px] mb-6 dark:border-gray-400" />
 
           <h2 className="text-[22px] font-bold">Có thể bạn quan tâm</h2>
-          
+
           <My_Recommend />
 
-          <hr className="mt-7 mb-6 dark:border-gray-400"/>
+          <hr className="mt-7 mb-6 dark:border-gray-400" />
           <h2 className="text-[22px] font-bold">5 Bình luận</h2>
 
           {/* input comment */}
@@ -121,7 +144,12 @@ const Play = () => {
 
             <div className="w-full border rounded relative hover:border-green-500 dark:border-gray-400">
               <div className="px-[12px] pt-[12px] pb-[30px]">
-                <textarea placeholder="Bình luận ngay" cols="1" rows="1" className="resize-none bg-none h-9 w-full dark:bg-slate-800 outline-0"></textarea>
+                <textarea
+                  placeholder="Bình luận ngay"
+                  cols="1"
+                  rows="1"
+                  className="resize-none bg-none h-9 w-full dark:bg-slate-800 outline-0"
+                ></textarea>
               </div>
               <span className="absolute right-3 bottom-2 text-xs text-gray-500 ">
                 0/280

@@ -78,14 +78,14 @@ function Intro() {
             <span className="mx-2 mt-1.5">
               <PlayIcon />
             </span>
-            <span>Play</span>
+            <span>Phát</span>
           </button>
 
           <button className="btnAdd">
             <span className="mx-2 mt-1.5">
               <BookmarkIcon />
             </span>
-            <span>Add to Watch..</span>
+            <span>Thêm vào...</span>
           </button>
 
           <button className="btnShare">
@@ -93,14 +93,14 @@ function Intro() {
               {" "}
               <ShareArrow />
             </span>
-            <span>Share</span>
+            <span>Chia sẻ</span>
           </button>
 
           <button className="btnDown">
             <span className="mx-2 mt-1.5">
               <Download />
             </span>
-            <span>Download</span>
+            <span>Tải xuống</span>
           </button>
         </div>
       </div>
