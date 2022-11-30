@@ -11,7 +11,7 @@ const SummaryInfo = ({ data }) => {
   return (
     <div className="h-[39rem] relative">
       <div className="absolute w-[60rem] h-[40rem] bg-gradient-to-r from-slate-800 top-0 z-10">
-        <div className="absolute left-14 top-1/4 text-slate-200 w-2/4">
+        <div className="absolute left-14 top-1/4 text-slate-300 w-2/4">
           <img src={data.logo} alt="" className="h-[6rem] mb-8" />
           <div>
             <div className="mb-4 flex h-4 items-center">

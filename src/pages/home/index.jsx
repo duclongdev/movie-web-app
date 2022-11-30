@@ -7,6 +7,7 @@ import Slider from "react-slick";
 import { NextIcon, PreIcon } from "../../assets";
 import ListMovie from "../../components/listMovie";
 import data from "../../assets/data/homeBaner";
+import Footer from "../detail/footer";
 
 const PrA = (props) => {
   const { className, onClick, size } = props;
@@ -45,7 +46,7 @@ const Home = () => {
       </Slider>
       <div className="bg-red w-20 h-20 absolute z-50 top-0"></div>
       <ListMovie />
-      <div className="w-12 h-64"></div>
+      <Footer />
     </div>
   );
 };
