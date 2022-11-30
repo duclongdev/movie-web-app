@@ -20,7 +20,7 @@ import EpisodesList from "./episodesList";
 const Play = () => {
   const [showMore, setShowMore] = useState(false);
 
-  const episode = "Episode";
+  const episode = "Tập";
 
   return (
     <div className="container pt-20">
@@ -36,11 +36,11 @@ const Play = () => {
           <a
             href=""
             className="no-underline my-4 font-bold uppercase text-xl hover:text-green-500 block dark:text-white">
-            BORUTO-NARUTO NEXT GENERATIONS
+            ONE PIECE
           </a>
 
           <h2 className="items-center text-center dark:text-white">
-            <span className="font-bold text-lg">Episodes</span>
+            <span className="font-bold text-lg">Tập phim</span>
           </h2>
 
           <My_Swiper />
@@ -49,7 +49,7 @@ const Play = () => {
         </div>
 
         <div className="information col-span-3 dark:text-white">
-          <TitleBar filmName="BORUTO-NARUTO NEXT GENERATIONS" episodes={episode + " 1"}/>
+          <TitleBar filmName="ONE PIECE" episodes={episode + " 1"}/>
           
           <div className="flex font-medium text-l mt-[12px]">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#00dc5a" className="w-5 h-5">
@@ -57,9 +57,9 @@ const Play = () => {
             </svg>
             <p className="font-bold text-[#00dc5a] mr-1">9.5</p>
             
-            <span className="mr-1">(71.7k ratings)</span>
+            <span className="mr-1">(71.7k Lượt đánh giá)</span>
             <span className="mr-1 text-gray-500">•</span>
-            <span className="text-green-500">Rate now</span>
+            <span className="text-green-500">Đánh giá</span>
           </div>
 
           <div className="flex">
@@ -72,13 +72,13 @@ const Play = () => {
               <div className="w-px h-5 border-1 text-gray-500 mx-2 border-slate-500 bg-slate-500"></div>
               <p className="font-semibold">2021</p>
               <div className="w-px h-5 border-1 text-gray-500 mx-2 border-slate-500 bg-slate-500"></div>
-              <p className="font-semibold mr-4">Updated to 246</p>
+              <p className="font-semibold mr-4">Cập nhật đến 246</p>
             </div>
 
             <div className="read-more-read-less w-[38%] mt-[14px]">
                 <button className='font-semibold flex items-center hover:text-[#00dc5a]' onClick={() => setShowMore(!showMore)} >
                     <span>
-                        {showMore ? 'Collapse' : 'More'}
+                        {showMore ? 'Thu nhỏ' : 'Thêm'}
                     </span>
                     <svg transform={showMore ? 'scale(1,-1)' : undefined} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-5 h-5">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
@@ -88,16 +88,16 @@ const Play = () => {
           </div>
 
           <ShowMore showMore={showMore}>
-            With peace and modernization, the residents in the ninja village, Konoha, is increasing, and the lifestyle of ninjas is changing constantly. Boruto, the son of Naruto Uzumaki, the seventh leader of the village, studies at the Ninja Academy where he meets his new team partners. How will they fight against the mysterious incidents in the village? The story of Boruto Uzumaki that sweeps everyone's heart like a gust of wind begins now!
+          Đảo Hải Tặc - One Piece là chuyện về cậu bé Monkey D. Luffy do ăn nhầm Trái Ác Quỷ, bị biến thành người cao su và sẽ không bao giờ biết bơi. 10 năm sau sự việc đó, cậu rời quê mình và kiếm đủ 10 thành viên để thành một băng hải tặc, biệt hiệu Hải tặc Mũ Rơm. Khi đó của phiêu lưu tìm kiếm kho báu One Piece bắt đầu. Trong cuộc phiêu lưu tìm kiếm One Piece, băng Hải tặc mũ rơm phải chiến đấu với nhiều băng hải tặc xấu khác cũng muốn độc chiếm One Piece và Hải quân của Chính phủ muốn diệt trừ hải tặc. Băng Hải tặc Mũ Rơm phải trải qua biết bao nhiêu khó khăn, không lùi bước với ước mơ "Trở thành Vua Hải Tặc và chiếm được kho báu One Piece".
           </ShowMore>
           <hr className="mt-[16px] mb-6 dark:border-gray-400"/>
 
-          <h2 className="text-[22px] font-bold">Recommended</h2>
+          <h2 className="text-[22px] font-bold">Có thể bạn quan tâm</h2>
           
           <My_Recommend />
 
           <hr className="mt-7 mb-6 dark:border-gray-400"/>
-          <h2 className="text-[22px] font-bold">5 Comments</h2>
+          <h2 className="text-[22px] font-bold">5 Bình luận</h2>
 
           {/* input comment */}
           <div className="flex pt-6 pb-1">
@@ -105,7 +105,7 @@ const Play = () => {
 
             <div className="w-full border rounded relative hover:border-green-500 dark:border-gray-400">
               <div className="px-[12px] pt-[12px] pb-[30px]">
-                <textarea placeholder="Post a comment" cols="1" rows="1" className="resize-none bg-none h-9 w-full dark:bg-slate-800 outline-0"></textarea>
+                <textarea placeholder="Bình luận ngay" cols="1" rows="1" className="resize-none bg-none h-9 w-full dark:bg-slate-800 outline-0"></textarea>
               </div>
               <span className="absolute right-3 bottom-2 text-xs text-gray-500 ">0/280</span>
             </div>

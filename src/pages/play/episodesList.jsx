@@ -36,7 +36,7 @@ const EpisodesList = ({ choice }) => {
                     <div className=""> 
                         <a href="#" className={epsTag} onClick={() => setCurrent(index)}>
                             <img src="https://www.iqiyipic.com/lequ/20210524/playing_gif_green.gif" alt="" className={current === index ? img1 : img1 += " hidden"}/>
-                            <span className="text-black dark:text-white font-medium flex-1 text-center">{`Eps ${value}`}</span>
+                            <span className="text-black dark:text-white font-medium flex-1 text-center">{`Tập ${value}`}</span>
                         </a>
                     </div>
                     
