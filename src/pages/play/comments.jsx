@@ -1,34 +1,69 @@
 import { useState } from "react";
 
 const Comments = () => {
-    const [status1, setStatus1] = useState(false);
-    const [status2, setStatus2] = useState(false);
+  const [status1, setStatus1] = useState(false);
+  const [status2, setStatus2] = useState(false);
 
-    const data = [
-    {useName: "Khang sama", timeCommented: "3 ngay truoc", commentContent: "Wibu từ đáy xã hội mà đi lên", imageSrc: "https://scontent.fsgn2-5.fna.fbcdn.net/v/t1.6435-1/117985896_3357627861128965_6048045986021171053_n.jpg?stp=dst-jpg_p320x320&_nc_cat=104&ccb=1-7&_nc_sid=7206a8&_nc_ohc=g8yBOcPHAB0AX9YB3hF&_nc_ht=scontent.fsgn2-5.fna&oh=00_AT-C7ev3LQ1B6-6g5G5S9NHvj-Y1MKuXYBkecMGKjZV3uw&oe=637B48FD"},
-    {useName: "Bad_Man", timeCommented: "1 tháng", commentContent: "so cool", imageSrc: "https://img7.iqiyipic.com/passport/20220905/9f/8e/passport_34025243248_166236516559205_130_130.jpg"},
-    {useName: "I found you🙂", timeCommented: "2 tháng", commentContent: "I can't play the vid because there's a join vip🙄", imageSrc: "https://img7.iqiyipic.com/passport/20220817/49/8e/passport_34024722240_166070254580085_130_130.jpg"},
-    {useName: "ethananimelover78", timeCommented: "2022-06-28", commentContent: "very annoying ads right", imageSrc: "https://img7.iqiyipic.com/passport/20220628/d4/08/passport_34022835066_165628398142256_130_130.jpg"},
-    {useName: "MUHAMMAD QAYYUM IQRAM BIN ABDILLAH Moe", timeCommented: "2021-11-04", commentContent: "so good", imageSrc: "https://img7.iqiyipic.com/passport/20211104/4a/3b/passport_34014944703_163600088988050_130_130.jpg"}]
+  const data = [
+    {
+      useName: "Khang sama",
+      timeCommented: "3 day ago",
+      commentContent: "Wibu từ đáy xã hội mà đi lên",
+      imageSrc:
+        "https://scontent.fsgn2-5.fna.fbcdn.net/v/t1.6435-1/117985896_3357627861128965_6048045986021171053_n.jpg?stp=dst-jpg_p320x320&_nc_cat=104&ccb=1-7&_nc_sid=7206a8&_nc_ohc=g8yBOcPHAB0AX9YB3hF&_nc_ht=scontent.fsgn2-5.fna&oh=00_AT-C7ev3LQ1B6-6g5G5S9NHvj-Y1MKuXYBkecMGKjZV3uw&oe=637B48FD",
+    },
+    {
+      useName: "Bad_Man",
+      timeCommented: "1 month(s)",
+      commentContent: "so cool",
+      imageSrc:
+        "https://img7.iqiyipic.com/passport/20220905/9f/8e/passport_34025243248_166236516559205_130_130.jpg",
+    },
+    {
+      useName: "I found you🙂",
+      timeCommented: "2month(s)",
+      commentContent: "I can't play the vid because there's a join vip🙄",
+      imageSrc:
+        "https://img7.iqiyipic.com/passport/20220817/49/8e/passport_34024722240_166070254580085_130_130.jpg",
+    },
+    {
+      useName: "ethananimelover78",
+      timeCommented: "2022-06-28",
+      commentContent: "very annoying ads right",
+      imageSrc:
+        "https://img7.iqiyipic.com/passport/20220628/d4/08/passport_34022835066_165628398142256_130_130.jpg",
+    },
+    {
+      useName: "MUHAMMAD QAYYUM IQRAM BIN ABDILLAH Moe",
+      timeCommented: "2021-11-04",
+      commentContent: "so good",
+      imageSrc:
+        "https://img7.iqiyipic.com/passport/20211104/4a/3b/passport_34014944703_163600088988050_130_130.jpg",
+    },
+  ];
 
+  return (
+    <div>
+      {data.map((value, index) => {
+        return (
+          <div className="flex pt-4">
+            <img
+              src={value.imageSrc}
+              alt=""
+              className="flex rounded-[50%] w-10 h-10 mr-[12px] mt-4 "
+            />
+            <div className="w-full relative border-t border-gray-200 pt-4 dark:border-gray-400 rounded-xl p-4">
+              <div className="flex items-center">
+                <span className="text-gray-500 font-semibold">
+                  {value.useName}
+                </span>
+                <span className="ml-1 mr-1 text-gray-500">•</span>
+                <span className="text-sm">{value.timeCommented}</span>
+              </div>
 
-    return (  
-        <div>
-            {data.map((value, index) => {
-                return (
-                    <div className="flex pt-4">
-                        <img src={value.imageSrc} alt="" className="flex rounded-[50%] w-10 h-10 mr-[12px] mt-4 " />
-                        <div className="w-full relative border-t border-gray-200 pt-4 dark:border-gray-400">
-                        
-                            <div className="flex items-center">
-                                <span className="text-gray-500 font-semibold">{value.useName}</span>
-                                <span className="ml-1 mr-1 text-gray-500">•</span>
-                                <span className="text-sm">{value.timeCommented}</span>
-                            </div>
-
-                            <div className="content mt-2">
-                                <span className="">{value.commentContent}</span>
-                            </div>
+              <div className="content mt-2">
+                <span className="">{value.commentContent}</span>
+              </div>
 
                             <div className="comment-btn mt-2 flex text-gray-500 pb-4">
                                 <button className="flex mr-6 hover:text-green-500 hover:fill-green-500" onMouseOver={() => setStatus1(true)} onMouseLeave={() => setStatus1(false)}>
@@ -39,7 +74,7 @@ const Comments = () => {
                                             </g>
                                         </g>
                                     </svg>
-                                    <span className="text-sm w-9 text-left leading-6">Thích</span>
+                                    <span className="text-sm w-9 text-left leading-6">Like</span>
                                 </button>
 
                                 <button className="flex hover:text-green-500" onMouseOver={() => setStatus2(true)} onMouseLeave={() => setStatus2(false)}>
@@ -52,7 +87,7 @@ const Comments = () => {
                                             </g>
                                         </g>
                                     </svg>
-                                    <span className="text-sm leading-6">Trả lời</span>
+                                    <span className="text-sm leading-6">Reply</span>
                                 </button>
                             </div>
 
